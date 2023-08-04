@@ -4,6 +4,7 @@ import CustomInput from "./CustomInput";
 import CustomSelect from "./CustomSelect";
 import { advancedSchema } from "../schemas";
 import CustomCheckBox from "./CustomCheckBox";
+import { Link } from "react-router-dom";
 
 const onSubmit = async (values, actions) => {
   await new Promise((resolve) => {
@@ -15,7 +16,7 @@ const onSubmit = async (values, actions) => {
 
 const PortalForm = () => {
   return (
-    <>
+    <div className="portal">
       <Formik
         initialValues={{ username: "", university: "", isAccepted: false }}
         onSubmit={onSubmit}
@@ -51,7 +52,8 @@ const PortalForm = () => {
           </Form>
         )}
       </Formik>
-    </>
+      <Link to="/">Ana Form'a Git</Link>
+    </div>
   );
 };
 

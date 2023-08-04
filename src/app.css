@@ -75,3 +75,16 @@ button {
 .checkbox input {
   width: 5%;
 }
+
+.generalForm,
+.portal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.generalForm a,
+.portal a {
+  color: white;
+  margin-top: 10px;
+}
